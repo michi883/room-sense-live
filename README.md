@@ -88,3 +88,7 @@ firebase deploy --only hosting
   - `js/engines/`: Audio, Energy, SFX, and Gemini Live integration logic.
   - `js/modes/`: Implementations for Performance, Analysis, and Compare modes.
   - `config/`: Configurations for personas and sound effects.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
