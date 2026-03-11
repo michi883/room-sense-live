@@ -27,8 +27,8 @@ Side-by-side persona rooms.
 
 ## Technical Details
 
-- **Backend**: Node.js with Express.js for serving static files, providing configuration, and exposing a Master Analysis endpoint (`/api/analyze`).
-- **AI Integration**: Uses Gemini 2.5 Flash (`gemini-2.5-flash-native-audio-preview-12-2025`) for real-time streaming audio interactions and (`gemini-2.5-flash-preview-05-20`) for structured JSON master analysis of comedy sets.
+- **Backend**: Node.js with Express.js for serving static files and providing configuration.
+- **AI Integration**: Uses Gemini 2.5 Flash (`gemini-2.5-flash-native-audio-preview-12-2025`) for real-time streaming audio interactions.
 - **Audio Processing**: Custom `AudioEngine` for microphone capture and `AudioStreamer` for playback.
 - **Visuals**: Features dynamic interactions with video loops that start playing automatically across all modes on load. Real-time visual filters and CSS styling react to audio and performance energy levels.
 
@@ -81,7 +81,7 @@ firebase deploy --only hosting
 
 ## Project Structure
 
-- `server.js`: The Express server and master analysis generation endpoint.
+- `server.js`: The Express server and configuration endpoint.
 - `Procfile`: Configures the entry point for Cloud Run.
 - `firebase.json` & `.firebaserc`: Configuration for Firebase Hosting.
 - `public/`: Frontend assets (HTML, CSS, JS).
